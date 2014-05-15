@@ -22,7 +22,7 @@ SECRET_KEY = '83fpf&$k40asz2*1cr6p=@(qce99xhgrtyz-4w3-1-+4$sqm63'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
@@ -52,6 +52,9 @@ ROOT_URLCONF = 'py.urls'
 
 WSGI_APPLICATION = 'py.wsgi.application'
 
+TEMPLATE_DIRS = {
+  "k:/KrishPy/py/templates",
+}
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

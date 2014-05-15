@@ -1,0 +1,9 @@
+<center>
+<h1 style="font-family:calibri;color:#005690;"> Hello Dudes </h1>
+{% if car_list %}
+<ul style="list-style:none;">
+{% for k in car_list %}
+<li> Name : {{k.name}} | Company : {{k.Company}}<li>
+{% endfor %}
+</ul>
+{% endif %}

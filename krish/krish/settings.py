@@ -22,7 +22,7 @@ SECRET_KEY = '$k!#)-@5=ecuu%2g=2-*d51#4c&a%#3mpwx2wqa5exu@skl-nv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
@@ -51,6 +51,10 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'krish.urls'
 
 WSGI_APPLICATION = 'krish.wsgi.application'
+
+TEMPLATE_DIRS = {
+ "k:/KrishPy/krish/templates",
+}    
 
 
 # Database

@@ -1,0 +1,9 @@
+
+ <h1> My Darling </h1>
+ {%  if cdbry_list  %}
+ <ul>
+ {%  for k in cdbry_list %}
+   <li>{{k.name}} | {{k.relation}}</li>
+ {% endfor %}
+ </ul>
+ {% endif %}
